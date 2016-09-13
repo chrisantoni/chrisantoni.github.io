@@ -80,6 +80,12 @@ width: 100px;
 #box-1:hover{
   width: 300px;
 }
+#coba{
+  position: absolute;
+  width: 350px;
+  top:0;
+  left:620;
+}
 .footer{
   position:absolute;
   bottom: 0;
