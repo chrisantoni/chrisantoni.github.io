@@ -51,9 +51,15 @@
 }
 .sidebar{
   position: absolute;
-  width: 350px;
+  width: 400px;
   top:0px;
-  left:620px;
+  left:500px;
+}
+.sidebar-01{
+  position: absolute;
+  width: 400px;
+  left:1000px;
+  top:0px;
 }
 hr {
     border-width: 2px;
@@ -67,12 +73,7 @@ width: 100px;
 #box-1:hover{
   width: 300px;
 }
-#coba{
-  position: absolute;
-  width: 350px;
-  top:0px;
-  left:620px;
-}
+
 .footer{
   position:relative;
   bottom: 0px;
