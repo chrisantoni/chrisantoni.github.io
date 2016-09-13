@@ -12,7 +12,7 @@
 }
 #menu-bar ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0px;
     overflow: hidden;
     background-image:url(../images/menu-bar-bg.jpg);
 }
@@ -34,7 +34,7 @@
 
 #content{
   position: relative;
-  top:200;
+  top:20px;
   width: 400px;
   left:30px;
 
@@ -52,8 +52,8 @@
 .sidebar{
   position: absolute;
   width: 350px;
-  top:0;
-  left:620;
+  top:0px;
+  left:620px;
 }
 hr {
     border-width: 2px;
@@ -70,14 +70,14 @@ width: 100px;
 #coba{
   position: absolute;
   width: 350px;
-  top:0;
-  left:620;
+  top:0px;
+  left:620px;
 }
 .footer{
   position:relative;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
-  margin: 0;
-  top:200;
+  margin: 0px;
+  top:200px;
   min-height: 100%;
 }
