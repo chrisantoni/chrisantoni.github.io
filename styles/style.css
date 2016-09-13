@@ -44,7 +44,7 @@ html {
 #content{
   position: relative;
   /* top right bottom left*/
-  margin:250px 500px 100px 300px;
+  margin:220px 500px 100px 300px;
 }
 #content p{
   font-family:"Comic Sans MS";
@@ -61,6 +61,24 @@ body{
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
+}
+.sidebar{
+  position: absolute;
+  width: 350px;
+  top:0;
+  left:620;
+}
+hr {
+    border-width: 2px;
+}
+#box-1{
+width: 100px;
+ height: 100px;
+ background: red;
+ transition: width 3s;
+}
+#box-1:hover{
+  width: 300px;
 }
 .footer{
   position:absolute;
