@@ -64,9 +64,9 @@ body{
 }
 .sidebar{
   position: absolute;
-  width: 400px;
+  width: 350px;
   top:0;
-  left:420;
+  left:620;
 }
 hr {
     border-width: 2px;
