@@ -24,6 +24,7 @@ function randomPilihanLawan(){
 //randomPilihanLawan()
 function bertarung(a,b)
 {
+  randomPilihanLawan()
   a = document.getElementById("pilihan").value
   b = document.getElementById("pilihanLawan").innerHTML
 	if(a==b)
