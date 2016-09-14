@@ -53,26 +53,47 @@
   position: absolute;
   width: 400px;
   top:0px;
-  left:500px;
+  left:450px;
 }
 .sidebar-01{
   position: absolute;
   width: 400px;
-  left:1000px;
+  left:900px;
   top:0px;
 }
 hr {
     border-width: 2px;
 }
-#box-1{
-width: 100px;
- height: 100px;
- background: red;
- transition: width 3s;
+#sidebar-01-hr{
+  position: relative;
+  left: -20px;
 }
-#box-1:hover{
-  width: 300px;
+#sidebar-01-hr hr{
+  border-width: 2px;
 }
+.form{
+	position:relative;
+  left: -20px;
+}
+
+.headline{
+	position:static;
+	width:400px;
+	float:left;
+}
+
+#news-title{
+	position:static;
+	text-indent:10px;
+
+}
+#news-title p{
+	position:static;
+	font-size:12px;
+
+
+}
+
 
 .footer{
   position:relative;

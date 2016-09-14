@@ -1,0 +1,88 @@
+div.exampletransitione {
+margin: 20px 0;
+}
+
+div.exampletransitione div.transition {
+width: 20px;
+height: 20px;
+background-color: #ED8029;
+color: #fff;
+padding: 10px;
+border-radius: 5px;
+margin-left: 0;
+-webkit-transition: 3s linear;
+-moz-transition: 3s linear;
+-o-transition: 3s linear;
+-ms-transition: 3s linear;
+transition: 3s linear;
+}
+
+div.exampletransitione:hover div.transition {
+margin-left: 280px;
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+-ms-transform:rotate(360deg);
+transform:rotate(360deg);
+-moz-box-shadow: -5px -5px 5px #888;
+-webkit-box-shadow: -5px -5px 5px #888;
+box-shadow: -5px -5px 5px #888;
+}
+.animations-body{
+  margin: 20px 0;
+}
+.animations {
+  margin-left: 10;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: yellow;
+  }
+}
+.transformatons-body{
+  margin: 20px 0;
+}
+.transformations {
+  display: inline-block;
+  background-color: #0074d9;
+  height: 100px;
+  width: 100px;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: roll 3s infinite;
+  transform: rotate(30deg);
+  opacity: .7;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
