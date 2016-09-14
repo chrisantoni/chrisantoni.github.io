@@ -94,7 +94,24 @@ hr {
 
 }
 
+.pekan-1-position{
+	padding-left:50px;
+}
+.pekan-1 {
+	width:600px;
+	height:750px;
+	border:solid 10px black;
+}
+.pekan-1 li,p{
+	font-family:times new roman;
+}
+.pekan-1 ol{
+	padding-left:20px;
+}
 
+#height{
+  height: 20000px;
+}
 .footer{
   position:relative;
   bottom: 0px;
