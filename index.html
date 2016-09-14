@@ -4,6 +4,9 @@
 <title>Hacktiv8</title>
 <link rel="stylesheet" type="text/css" href="styles/style.css"></link>
 <link rel="stylesheet" type="text/css" href="styles/animations.css"></link>
+<script src="Javascript/konversiWaktu.js"></script>
+<script src="Javascript/orderString.js"></script>
+<script src="Javascript/palindrome.js"></script>
 </head>
 <body>
 <div id="head">
@@ -13,6 +16,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="#">About Me</a></li>
       <li style="float:right"><a href="http://tonylearntorock.blogspot.co.id/" target="_blank">Blog</a></li>
+      <li><a href="https://www.codecademy.com/tonychen93" target="_blank">Codecademy</a></li>
     </ul>
   </div>
 </div>
@@ -58,6 +62,22 @@ Hobi saya:<ul>
     <iframe width="400" height="315" src="https://www.youtube.com/embed/H_-bmH9Qs2s" frameborder="0" allowfullscreen></iframe>
     <p style="font-size:12px">Alien Invasion:The Battle for Earth</p>
   <hr></hr>
+  <p style="text-align:center;font-size:18px;"><b>Thinking, Learning, and Progressing More Efficiently and Effectively</b></p>
+    <section class="main-content">
+      <div class="learning">
+      		 Apa saja tantangan utama yang sudah kamu hadapi terkait manajemen waktu?
+      		<p><del>Sulit dalam mengimplementasi sistem konsistensi dalam manajemen waktu.<del></p>
+      		Bagaimana cara kamu mengatasi tantangan tersebut? Teknik apa yang ingin atau sudah kamu coba?
+      		<p><del>Perancangan Jadwal kegiatan sehari-hari. Teknik yang ingin saya coba adalah teknik Fogg oleh BJ Fogg, yaitu "<i>building a tiny habit</i>"<del></p>
+      		Apa rencana atau strategi keseluruhan yang sudah kamu rancang untuk menghadapi berbagai kegiatan berikut?
+      		<p><del>Fokus dan tetap ikuti jadwal.<del></p>
+      		Apakah kamu sudah memiliki growth mindset? Ceritakanlah keadaan mindset kamu sekarang.
+      		<p><del>Kadang fixed, kadang growth, tergantung situasi. contohnya ketika aku lagi onfire, aku akan nyelesain semua persoalan yang susah, tadi ada
+      		saatnya ketika aku menghindar akan persoalan yang susah dengan alasan aku tidak bisa, aku takut.<del></p>
+      		Apakah kamu pikir atau rasakan bahwa kamu sudah memiliki cara belajar yang terbaik? Jika sudah atau belum, ceritakanlah alasanmu.
+      		<p><del>belum, karna masih inkonsistensi dalam melakukan tiap kegiatan yang udah aku rancang dan kadang masih takut menghadapi persoalan yang baru ataupun
+      		 tantangan yang baru.<del></p>
+      	</div>
     </div>
   </div>
 <div id="height"></div>
@@ -108,6 +128,28 @@ Hobi saya:<ul>
       		<img src="images/puncak.jpg"width="400px" height="250px"></img>
       		</div>
     </div>
+      <hr></hr>
+      <div class="konversiWaktu">
+        <p style="text-align:center;font-size:18px;"><b>Konversi Waktu</b></p>
+        Masukkan waktu yang mau dikonversi<br><input id="input" placeholder="dalam bentuk angka"></input>
+        <button type="submit" onclick="waktuKonversi()">submit</button>
+        <br>Hasil Konversi : <span id="hasilKonversi"></span><br>
+      </div>
+      <hr></hr>
+      <div class="orderString">
+          <p style="text-align:center;font-size:18px;"><b>Order String</b></p>
+          Masukkan kata yang mau diurut<br><input id="inputString" placeholder="string"></input>
+          <button type="submit" onclick="stringOrder()">submit</button>
+          <br>Hasil Konversi : <span id="hasilKonversiString"></span><br>
+      </div>
+      <hr></hr>
+      <div class="palindrome">
+          <p style="text-align:center;font-size:18px;"><b>Palindrome</b></p>
+          Masukkan kata <br><input id="inputPalindrome" placeholder="string"></input>
+          <button type="submit" onclick="checkPalindrom()">submit</button>
+          <br>Hasil : <span id="cekPalindrome"></span><br>
+      </div>
+      <hr></hr>
   </div>
 <div class="sidebar-01">
   <p>Personal Contact Form</p>
