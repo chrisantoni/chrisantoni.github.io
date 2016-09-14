@@ -7,6 +7,8 @@
 <script src="Javascript/konversiWaktu.js"></script>
 <script src="Javascript/orderString.js"></script>
 <script src="Javascript/palindrome.js"></script>
+<script src="Javascript/math-basics.js"></script>
+<script src="Javascript/rock-paper-scissor.js"></script>
 </head>
 <body>
 <div id="head">
@@ -148,6 +150,36 @@ Hobi saya:<ul>
           Masukkan kata <br><input id="inputPalindrome" placeholder="string"></input>
           <button type="submit" onclick="checkPalindrom()">submit</button>
           <br>Hasil : <span id="cekPalindrome"></span><br>
+      </div>
+      <hr></hr>
+      <div class="math-basic">
+          <p style="text-align:center;font-size:18px;"><b>Math Basics</b></p>
+          <b>Pangkat Angka</b><br>
+          <input id="angka" placeholder="angka"></input><input id="pangkat" placeholder="pangkat"></input>
+          <button type="submit" onclick="pangkatAngka()">submit</button>
+          <br>Hasil : <span id="hasilPangkatAngka"></span><br><br>
+
+          <b>Akar Kuadrat</b><br>
+          <input id="akar" placeholder="akar kuadrat"></input>
+          <button type="submit" onclick="akarKuadrat()">submit</button>
+          <br>Hasil : <span id="hasilAkarKuadrat"></span><br><br>
+
+          <b>Hipotenusa</b><br>
+          <input id="angka1" placeholder="angka"></input><input id="angka2" placeholder="angka"></input>
+          <button type="submit" onclick="hipotenusa()">submit</button>
+          <br>Hasil : <span id="hasilHipotenusa"></span><br><br>
+          <b>Luas Lingkaran</b><br>
+          <input id="luasLingkaran" placeholder="jari-jari"></input>
+          <button type="submit" onclick="luasLingkaran()">submit</button>
+          <br>Hasil : <span id="hasilLuasLingkaran"></span><br><br>
+      </div>
+      <hr></hr>
+      <div class="suit-lokal">
+          <p style="text-align:center;font-size:18px;"><b>Rock Paper Scissor</b></p>
+          Masukkan pilihan: <input id="pilihan" placeholder="rock/paper/scissor"></input><br>
+          Pilihan lawan: <span id="pilihanLawan">?</span><br>
+          <button type="submit" onclick="randomPilihanLawan();bertarung()">submit</button>
+          <br>Hasil : <span id="hasilBertarung"></span><br><br>
       </div>
       <hr></hr>
   </div>
