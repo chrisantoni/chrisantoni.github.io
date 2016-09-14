@@ -90,27 +90,73 @@ hr {
 #news-title p{
 	position:static;
 	font-size:12px;
-
-
 }
-
 .pekan-1-position{
-	padding-left:50px;
+  position: relative;
+  left:20px;
 }
-.pekan-1 {
+.pekan-2-position{
+  position: relative;
+  top:-842px;
+  left:700px;
+}
+.pekan-3-position{
+  position: relative;
+  left:20px;
+  top:-842px;
+}
+.pekan-4-position{
+  position: relative;
+  top:-1684px;
+  left:700px;
+}
+#pekan-1{
 	width:600px;
 	height:750px;
 	border:solid 10px black;
 }
-.pekan-1 li,p{
+#pekan-1 li,p{
 	font-family:times new roman;
 }
-.pekan-1 ol{
+#pekan-1 ol{
+	padding-left:20px;
+}
+#pekan-2{
+	width:600px;
+	height:750px;
+	border:solid 10px black;
+}
+#pekan-2 li,p{
+	font-family:times new roman;
+}
+#pekan-2 ol{
+	padding-left:20px;
+}
+#pekan-3{
+	width:600px;
+	height:750px;
+	border:solid 10px black;
+}
+#pekan-3 li,p{
+	font-family:times new roman;
+}
+#pekan-3 ol{
+	padding-left:20px;
+}
+#pekan-4{
+	width:600px;
+	height:750px;
+	border:solid 10px black;
+}
+#pekan-4 li,p{
+	font-family:times new roman;
+}
+#pekan-4 ol{
 	padding-left:20px;
 }
 
 #height{
-  height: 20000px;
+  height: 4500px;
 }
 .footer{
   position:relative;
