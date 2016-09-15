@@ -9,6 +9,10 @@
 <script src="Javascript/palindrome.js"></script>
 <script src="Javascript/math-basics.js"></script>
 <script src="Javascript/rock-paper-scissor.js"></script>
+<script src="Javascript/formatHuruf.js"></script>
+<script src="Javascript/separateNumber.js"></script>
+<script src="Javascript/formatAngka.js"></script>
+<script src="Javascript/contact-list.js"></script>
 </head>
 <body>
 <div id="head">
@@ -180,6 +184,44 @@ Hobi saya:<ul>
           Pilihan lawan: <span id="pilihanLawan">?</span><br>
           <button type="submit" onclick="bertarung()">submit</button>
           <br>Hasil : <span id="hasilBertarung"></span><br><br>
+      </div>
+      <hr></hr>
+      <div class="format-huruf">
+          <p style="text-align:center;font-size:18px;"><b>Format Huruf</b></p>
+          Masukkan kata/kalimat: <input id="formatHuruf" placeholder="kata/kalimat"></input><br>
+          <button type="submit" onclick="formatHuruf()">submit</button>
+          <br>Hasil : <span id="hasilFormatHuruf"></span><br><br>
+      </div>
+      <hr></hr>
+      <div class="separate-number">
+          <p style="text-align:center;font-size:18px;"><b>Separate Number</b></p>
+          Masukkan angka : <input id="numberSeparate" placeholder="odd/even"></input><br>
+          <button type="submit" onclick="separateNumber()">submit</button>
+          <br>Hasil : <span id="hasilSeparateNumber"></span><br>
+          <span id="errorMessage"></span>
+          <br>
+      </div>
+      <hr></hr>
+      <div class="format-angka">
+          <p style="text-align:center;font-size:18px;"><b>Format Angka</b></p>
+          masukkan angka : <br><input id="bilangan" placeholder="pembilang"></input><input id="bagi" placeholder="pembagi"></input><br>
+          <button type="submit" onclick="formatAngka()">submit</button>
+          <br>Hasil : <span id="hasilFormatAngka"></span><br>
+          <span id="hint"></span>
+          <br>
+      </div>
+      <hr></hr>
+      <div class="contact-list">
+          <p style="text-align:center;font-size:18px;"><b>Daftar Kontak</b></p>
+          Tambah Kontak : <br><input id="nama" placeholder="nama"></input><input id="email" placeholder="email"></input>
+          <input id="telepon" placeholder="telepon"></input><br>
+          <button type="submit" onclick="Program.tambahKontak()">submit</button><span id="kontakBaru"></span><br>
+          Cari Kontak : <input id="cariNama" placeholder="nama"></input>
+          <button type="submit" onclick="Program.cariKontak()">Cari</button>
+          <button type="submit" onclick="Program.lihatSemua()">Lihat Semua</button><br>
+          <span id="hasilPencarian"></span><br><br>
+          <span id="hasilKontakList"></span>
+          <br>
       </div>
       <hr></hr>
   </div>
