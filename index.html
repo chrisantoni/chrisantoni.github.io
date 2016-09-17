@@ -13,6 +13,7 @@
 <script src="Javascript/separateNumber.js"></script>
 <script src="Javascript/formatAngka.js"></script>
 <script src="Javascript/contact-list.js"></script>
+<script src="Javascript/number-guess.js"></script>
 </head>
 <body>
 <div id="head">
@@ -222,6 +223,16 @@ Hobi saya:<ul>
           <span id="hasilPencarian"></span><br><br>
           <span id="hasilKontakList"></span>
           <br>
+      </div>
+      <hr></hr>
+      <div class="tebak-angka">
+          <p style="text-align:center;font-size:18px;"><b>Tebak Angka</b></p>
+          <span>Banyaknya peluang untuk menebak : <span id="banyaknyaTebakan"></span></span><br>
+          <span id="answer"></span>
+          Masukkan angka untuk menebak</br><input id="inputTebakan"></input>
+          <button id="submitHasil">Submit</button><br>
+          <span id="resultHasil"></span>
+          <span id="katakunci" style="color:red"></span><br>
       </div>
       <hr></hr>
   </div>
