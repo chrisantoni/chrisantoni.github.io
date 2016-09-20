@@ -1,27 +1,22 @@
 function cekString(kumpulanHuruf,kata){
-  var flag=false;
-  var tampungKata = []
-var arrayHuruf = kumpulanHuruf.split('')
-var arrayKata = kata.split('')
-
-for(var i=0;i<arrayKata.length;i++)
+  var arrayHuruf = kumpulanHuruf.split('')
+  var arrayKata = kata.split('')
+  for(var i=0;i<arrayHuruf.length;i++)
+  {
+    for(var j=0;j<arrayKata.length;j++)
     {
-      for(var j=0;j<arrayHuruf.length;j++){
-      if(arrayKata[i] === arrayHuruf[j]){
-      tampungKata.push(arrayKata[i])
+      if(arrayHuruf[i] !== arrayKata[i])
+      arrayHuruf.splice(i,1)
     }
-      }
-    }
-    if(tampungKata.length === kata.length)
+  }
+  if(arrayHuruf.length === arrayKata.length)
+  {
     return true
-    else {
-      return false
-    }
+  }else {
+    return false
+  }
 }
-console.log(cekString("abcd","ada"));//true
+console.log(cekString('abcdaa','adaa'));//true
 console.log(cekString("abcdefghijklmno", "matahari"));//false
-// var kata = 'kata'
-// var huruf = 'akta'
-//
-// huruf = kata
-// console.log(huruf);
+console.log(cekString("aaawossrld", "world"))//true
+console.log(cekString("aaawossrld", "worldd"))//false

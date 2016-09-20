@@ -1,7 +1,7 @@
-function jenisBilangan()
+function jenisBilangan(max)
 {
   var flag=false
-    for(var i=1;i<=100;i++)
+    for(var i=1;i<=max;i++)
     {
       if(i%2===0)
       {
@@ -28,4 +28,4 @@ function jenisBilangan()
       }
     }
 }
-jenisBilangan()
+jenisBilangan(100)

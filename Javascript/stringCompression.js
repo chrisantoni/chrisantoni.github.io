@@ -14,7 +14,7 @@ function stringCompression(string) {
     return frekuensi;
 };
 
-console.log(stringCompression("aku makan nasi"));
+console.log(stringCompression("aaaabbcddddddee"));
 
 // function stringCompression()
 // {

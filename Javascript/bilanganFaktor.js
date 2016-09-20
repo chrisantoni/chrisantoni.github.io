@@ -10,5 +10,5 @@ function bilanganFaktor(n){
       return result;
 }
 
-hasil = bilanganFaktor(99);
+hasil = bilanganFaktor(10);
 console.log(hasil);
