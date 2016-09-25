@@ -1,79 +1,33 @@
-//
-// var tampungRandom=[]
-// var random
-// for(var i=0;i<10;i++)
-// {
-//   random = Math.floor(Math.random()*10)+1
-//   tampungRandom.push(random)
-// }
-// console.log(tampungRandom);
-
-var randoms = randomNumbers(10),
-    rand = randoms(),
-    result = [];
-while(rand != null) {
-    result.push(rand);
-    rand = randoms();
+function countDown(num)
+{
+  if(num===0)return
+    console.log(num);
+    return countDown(num-1)
 }
-console.log(result);
 
-
-// var kumpulanHuruf = "aaawossrld"
-// var kata = 'world'
-//
-// var arrayHuruf = kumpulanHuruf.split('')
-// var arrayKata = kata.split('')
-//
-// for(var i=0;i<arrayHuruf.length;i++)
-// {
-//   for(var j=0;j<arrayKata.length;j++)
-//   {
-//     if(arrayHuruf[i] !== arrayKata[i])
-//     arrayHuruf.splice(i,1)
-//   }
-// }
-//
-// if(arrayHuruf.length === arrayKata.length)
-// {
-//   console.log("true");
-// }else {
-//   console.log('false');
-// }
+countDown(10)
 
 
 
 
-
-
-
-
-
-
-
-// function stringCompression(string) {
-//   var hapusSpasi = string.replace(/ /gi,'')
-//     var frekuensi = [];
-//     for (var i=0; i<hapusSpasi.length;i++) {
-//         var karakter = hapusSpasi.charAt(i);
-//         // aku makan nasi
-//         if (frekuensi[karakter]) {
-//            frekuensi[karakter]++;
-//         } else {
-//            frekuensi[karakter] = 1;
-//         }
-//     }
-//
-//     return frekuensi;
-// };
-// var string= "aku makan nasi"
-// var frekuensi = {}
-// for(var i=0;i<string.length;i++){
-// var karakter = string.charAt(i)
-//
-// if(frekuensi.karakter)
-// {frekuensi.karakter++
-// }
-// else frekuensi.karakter = 1
-// }
-//
-// console.log(frekuensi);
+  // function indexPrima(index) {
+  //     var primes = [''],
+  //         n, divisor;
+  //     if (index === 0) {
+  //         return ("index should start at 1");
+  //     } else {
+  //         var limit = (index * 10);
+  //     }
+  //     outerLoop:for (n = 2; n <= limit; n++) {
+  //         for (divisor = 2; divisor < n; divisor++) {
+  //             if (n % divisor === 0) {
+  //                 continue outerLoop;
+  //             }
+  //         }
+  //         primes.push(n);
+  //     }
+  //
+  //     return primes[index];
+  //
+  // }
+  // console.log(indexPrima(4))

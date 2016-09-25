@@ -1,15 +1,24 @@
 function faktorPrima(remainder) {
       var result = [], i;
-
+      var resultToString;
+      var splitPangkat;
       for (i = 2; i <= remainder; i++) {
           while ((remainder % i) === 0) {
               result.push(i);
               remainder /= i;
           }
       }
-      return result
+resultToString = result.toString().replace(/,/g,'')
+console.log(resultToString);
+      for(var i=1;i<resultToString.length;i++)
+      {
+        if(resultToString[i]===resultToString[i+1])continue
+        splitPangkat = resultToString.split(resultToString[i]).length-1
+      console.log(resultToString[i]+" pangkat "+splitPangkat);
+      }
   }
-console.log(faktorPrima(120));
+  faktorPrima(12)
+
 
 
 
@@ -33,26 +42,16 @@ console.log(faktorPrima(120));
 //   result.push(x)
 //   if(x===num)
 //   {
-//   console.log(result)
-//     // for(var i=0;i<result.length;i++)
-//     // {
-//     //   if(result[i] === result[i+1])
-//     //   {
-//     //       if(result[i+1] === result[i+2]){
-//     //       flag=false
-//     //     console.log(result[i]+" pangkat "+3);
-//     //   }else if(result[i+1] !== result[i+2])
-//     //   {
-//     //     if(result[i+2] !== result[i+3])
-//     //     {
-//     //       console.log(result[i+2]+" pangkat "+1);
-//     //       console.log(result[i+3]+" pangkat "+1);
-//     //     }
-//     //   }
-//     // }
-//     // }
+//   resultToString = result.toString().replace(/,/g,'')
+//   console.log(resultToString);
+//       for(var i=1;i<resultToString.length;i++)
+//         {
+//           if(resultToString[i]===resultToString[i+1])continue
+//           splitPangkat = resultToString.split(resultToString[i]).length-1
+//         console.log(resultToString[i]+" pangkat "+splitPangkat);
+//         }
 //   }
 //   else return faktorPrima(num/x,result)
 //
 // }
-// faktorPrima(120)
+// faktorPrima(12)

@@ -7,16 +7,27 @@ function polaAngka(arr)
     }
     else if(arr[i+1]-arr[i] === arr[i+2]-arr[i+1] && arr[i+2]-arr[i+1] === arr[i+3]-arr[i+2])
     {
+      if((arr[i+1]-arr[i]) === -2){
+console.log("pola angka : dikurang "+(-(arr[i+1]-arr[i])));
+      }else{
     console.log("pola angka : ditambah "+(arr[i+1]-arr[i]));
+  }
   }else if(arr[i+1]/arr[i] === arr[i+2]/arr[i+1] && arr[i+2]/arr[i+1] === arr[i+3]/arr[i+2]){
-      console.log("pola angka : dikali "+(arr[i+1]/arr[i]).toFixed(1));
+    if((arr[i+1]/arr[i]) === 3){
+      console.log("pola angka : dikali "+(arr[i+1]/arr[i]))
+    }else
+      console.log("pola angka : dibagi "+(arr[i]/arr[i+1]))
+     }
+     else {
+          console.log("pola angka tidak ada");
      }
 }
 }
-polaAngka([1,3,5,7])
+polaAngka([1,4,7,10])
 polaAngka([7,5,3,1])
 polaAngka([1,3,9,27])
 polaAngka([27,9,3,1])
+
 
 
 // [1,3,5,7] = "pola angka : ditambah 2"
